@@ -66,9 +66,285 @@
         </div>
     </header>
 
+    <section id="actions" class="py-4 mb-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#addPostModal">
+                        <i class="fas fa-plus"></i> Add Post
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="btn btn-success btn-block" data-toggle="modal" data-target="#addCategoryModal">
+                        <i class="fas fa-plus"></i> Add Categories
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="btn btn-warning btn-block" data-toggle="modal" data-target="#addUserModal">
+                        <i class="fas fa-plus"></i> Add Users
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div class="modal fade" id="addPostModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Add Post</h5>
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="title">Title</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="ategory">Category</label>
+                            <select class="form-control">
+                                <option value="">Web Development</option>
+                                <option value="">Tech Gadget</option>
+                                <option value="">Business</option>
+                                <option value="">Health</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="image">Upload Image</label>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="image">
+                                <label for="image" class="custom-file-label">Choose File</label>
+                            </div>
+                            <small class="form-text text-muted">Max Size 3mb</small>
+                        </div>
+                        <div class="form-group">  
+                            <label for="body">Body</label>
+                            <textarea name="editor1" id="editor" class="form-control"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal">Save Changes</button>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <!-- Modals Category -->
+    <div class="modal fade" id="addCategoryModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">Add Category</h5>
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="title">Title</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal">Save Changes</button>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <!-- Modals User -->
+    <div class="modal fade" id="addUserModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-warning text-white">
+                    <h5 class="modal-title">Add Users</h5>
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Confirm Password</label>
+                            <input type="password" class="form-control">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal">Save Changes</button>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <!-- post section -->
+    <section id="post">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Latest Post</h4>
+                        </div>
+                        <table class="table table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Title</th>
+                                    <th>Category</th>
+                                    <th>Date</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#</td>
+                                    <td>Title 1</td>
+                                    <td>Web Dev</td>
+                                    <td>2019-04-12</td>
+                                    <td>
+                                        <a href="details.html" class="btn btn-secondary">
+                                            <i class="fas fa-angle-double-right"></i> Details
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#</td>
+                                    <td>Title 2</td>
+                                    <td>Web Dev</td>
+                                    <td>2019-04-12</td>
+                                    <td>
+                                        <a href="details.html" class="btn btn-secondary">
+                                            <i class="fas fa-angle-double-right"></i> Details
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#</td>
+                                    <td>Title 3</td>
+                                    <td>Web Dev</td>
+                                    <td>2019-04-12</td>
+                                    <td>
+                                        <a href="details.html" class="btn btn-secondary">
+                                            <i class="fas fa-angle-double-right"></i> Details
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#</td>
+                                    <td>Title 4</td>
+                                    <td>Web Dev</td>
+                                    <td>2019-04-12</td>
+                                    <td>
+                                        <a href="details.html" class="btn btn-secondary">
+                                            <i class="fas fa-angle-double-right"></i> Details
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#</td>
+                                    <td>Title 5</td>
+                                    <td>Web Dev</td>
+                                    <td>2019-04-12</td>
+                                    <td>
+                                        <a href="details.html" class="btn btn-secondary">
+                                            <i class="fas fa-angle-double-right"></i> Details
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#</td>
+                                    <td>Title 6</td>
+                                    <td>Web Dev</td>
+                                    <td>2019-04-12</td>
+                                    <td>
+                                        <a href="details.html" class="btn btn-secondary">
+                                            <i class="fas fa-angle-double-right"></i> Details
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center bg-primary text-white mb-3">
+                        <div class="card-body">
+                            <h3>Post</h3>
+                            <h4 class="display-4">
+                                <i class="fas fa-pencil-alt"></i> 6
+                            </h4>
+                            <a href="posts.html" class="btn btn-outline-light btn-sm">View</a>
+                        </div>
+                    </div>
+                    <div class="card text-center bg-success text-white mb-3">
+                        <div class="card-body">
+                            <h3>Categories</h3>
+                            <h4 class="display-4">
+                                <i class="fas fa-folder"></i> 5
+                            </h4>
+                            <a href="categories.html" class="btn btn-outline-light btn-sm">View</a>
+                        </div>
+                    </div>
+                    <div class="card text-center bg-warning text-white mb-3">
+                        <div class="card-body">
+                            <h3>Users</h3>
+                            <h4 class="display-4">
+                                <i class="fas fa-users"></i> 2
+                            </h4>
+                            <a href="users.html" class="btn btn-outline-light btn-sm">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer" class="bg-dark text-white mt-5 p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="lead text-center">
+                        Copyright &copy; <span id="year"></span>
+                        Fordis
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/popper.min.js"></script>
+<script src="ckeditor/ckeditor.js"></script>
+<script>
+    $('#year').text(new Date().getFullYear());
+    ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
 </body>
 </html>
